@@ -1,8 +1,8 @@
-'use client'
+"use client";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 export default function Header() {
   return (
-    <div className="bg-accent w-2/3 mx-auto flex justify-between">
+    <div className="bg-secondary w-2/3 mx-auto flex justify-between mt-10 p-5">
       <h1 className="">Ryan Fritz</h1>
       <div className="flex gap-8 items-center">
         <p>About</p>
