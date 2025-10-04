@@ -1,3 +1,4 @@
+//used in components to determine if the device is mobile or not, mainly for shadcn 
 import * as React from "react"
 
 const MOBILE_BREAKPOINT = 768
