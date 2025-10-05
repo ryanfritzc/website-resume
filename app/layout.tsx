@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Ryan Fritz | Full Stack Developer",
   description:
-    "Ryan Fritz Full Stack Developer C# TypeScript Python Next.js Node.js SQL",
+    "Ryan Fritz is a full stack developer specializing in building exceptional digital experiences. Currently, he is focused on building responsive full-stack web applications.",
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange>
           <Header />
-          {children}
+          <div className="bg-background">{children}</div>
           <Footer />
         </ThemeProvider>
       </body>

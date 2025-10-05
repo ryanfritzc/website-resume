@@ -1,15 +1,10 @@
 "use client";
+import { getCurrentYear, scrollToTop } from "@/lib/utils";
 
-export default function Footer() {
-  function scrollToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-  const date = new Date().getFullYear().toString();
-
+const Footer = () => {
   return (
     <div className="w-64 mx-auto flex gap-2.5">
-      <p>© {date} Ryan Fritz</p>
+      <p>© {getCurrentYear()} Ryan Fritz</p>
       <p> | </p>
       <p
         className="underline hover:cursor-pointer"
@@ -18,4 +13,6 @@ export default function Footer() {
       </p>
     </div>
   );
-}
+};
+
+export default Footer;
