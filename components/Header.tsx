@@ -25,7 +25,7 @@ const Header = () => {
       className={`${
         isScrollAtTop()
           ? "bg-transparent border-transparent"
-          : "bg-primary border-foreground"
+          : "bg-primary border-foreground text-stone-100"
       } fixed top-0 w-full mx-auto p-5 border-b`}>
       <div className="flex flex-row items-center justify-between max-w-6xl mx-auto">
         <h1 className="">Ryan Fritz</h1>
