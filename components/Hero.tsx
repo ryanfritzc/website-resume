@@ -1,4 +1,4 @@
-import Headshot from "../app/assets/headshot.jpg";
+import Headshot from "../app/assets/headshot.png";
 import Image from "next/image";
 
 export const Hero = () => {
