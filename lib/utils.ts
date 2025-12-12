@@ -10,7 +10,17 @@ export function getCurrentYear() {
   return new Date().getFullYear().toString();
 }
 
-export function scrollToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+export function scrollToLocation(scrollLocation: number) {
+  document.body.scrollTop = scrollLocation;
+  document.documentElement.scrollTop = scrollLocation;
+}
+
+export function getElementPosition(id: string, axis: "x" | "y"): number {
+  const element = document.getElementById(id);
+  if (element) {
+    const rect = element.getBoundingClientRect();
+    if (axis === "x") return rect.left;
+    return rect.top - 200;
+  }
+  return 0;
 }

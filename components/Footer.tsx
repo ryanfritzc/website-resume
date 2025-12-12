@@ -1,5 +1,5 @@
 "use client";
-import { getCurrentYear, scrollToTop } from "@/lib/utils";
+import { getCurrentYear, scrollToLocation } from "@/lib/utils";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
       <p> | </p>
       <p
         className="underline hover:cursor-pointer"
-        onClick={() => scrollToTop()}>
+        onClick={() => scrollToLocation(0)}>
         Back to top
       </p>
     </div>

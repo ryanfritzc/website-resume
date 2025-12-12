@@ -1,13 +1,12 @@
 import { Hero } from "@/components/Hero";
-import { GithubGraph } from "@/components/GithubGraph";
+import { Projects } from "@/components/Projects";
+import { Skills } from "@/components/Skills";
 const Home = () => {
   return (
     <div className="w-full">
       <Hero />
-      <GithubGraph />
-      <h1 className="h-96"> This</h1>
-      <h1 className="h-96"> This</h1>
-      <h1 className="h-96"> This</h1>
+      <Skills />
+      <Projects />
     </div>
   );
 };
