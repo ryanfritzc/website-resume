@@ -166,7 +166,7 @@ export const typescriptLogo = (
       width="32"
       height="32"
       rx="6"
-      fill="transparent"
+      fill="var(--svg-color)"
       stroke="#fff"
       strokeWidth="2"
     />

@@ -39,6 +39,7 @@
   --sidebar-accent-foreground: hsl(0 0% 0%);
   --sidebar-border: hsl(203 25% 63%);
   --sidebar-ring: hsl(193 98% 45%);
+  --svg-color: currentColor;
 }
 
 .dark {
@@ -70,6 +71,7 @@
   --sidebar-accent-foreground: hsl(0 0% 100%);
   --sidebar-border: hsl(203 25% 32%);
   --sidebar-ring: hsl(193 98% 45%);
+  --svg-color: transparent;
 }
 
 @theme inline {
