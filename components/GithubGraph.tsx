@@ -14,7 +14,14 @@ export const GithubGraph = () => {
   return (
     <div className="flex justify-center">
       <div className="flex flex-col">
-        <h2 className="text-center text-4xl my-10">My GitHub Contributions</h2>
+        <h2 className="text-center text-4xl my-10">
+          {" "}
+          <a
+            href="https://github.com/ryanfritzc"
+            className="text-ring hover:underline">
+            My GitHub Contributions
+          </a>
+        </h2>
         <GitHubCalendar
           username="ryanfritzc"
           theme={calendarTheme}

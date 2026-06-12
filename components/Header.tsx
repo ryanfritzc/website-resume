@@ -27,7 +27,7 @@ const Header = () => {
         isScrollAtTop()
           ? "bg-secondary border-transparent"
           : "bg-secondary border-foreground "
-      } fixed top-0 w-full mx-auto p-5 border-b`}>
+      } fixed top-0 w-full p-5 border-b`}>
       <div className="flex flex-row items-center justify-between max-w-6xl mx-auto">
         <h1
           className="hover:underline hover:cursor-pointer"

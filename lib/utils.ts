@@ -11,8 +11,10 @@ export function getCurrentYear() {
 }
 
 export function scrollToLocation(scrollLocation: number) {
-  document.body.scrollTop = scrollLocation;
-  document.documentElement.scrollTop = scrollLocation;
+  window.scrollTo({
+    top: scrollLocation,
+    behavior: "smooth",
+  });
 }
 
 export function getElementPosition(id: string, axis: "x" | "y"): number {
