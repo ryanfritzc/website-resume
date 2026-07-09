@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <div className="w-full h-dvh flex bg-secondary pt-20">
-      <div className="w-full flex flex-row items-center justify-between max-w-6xl mx-auto gap-20">
-        <div>
-          <Image src={Headshot} alt="Ryan Fritz" className="rounded-2xl" />
+    <div className="flex w-full bg-secondary px-10 pb-10 pt-24 sm:h-dvh lg:px-0 sm:pb-0 sm:pt-20">
+      <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-8 sm:flex-row sm:items-center sm:justify-between sm:gap-20">
+        <div className="w-full max-w-sm sm:w-auto sm:max-w-none">
+          <Image src={Headshot} alt="Ryan Fritz" className="h-auto w-full rounded-2xl sm:w-auto" />
         </div>
-        <div className="flex flex-col max-w-1/2">
-          <h1 className="text-5xl font-bold mb-5">Hey, I'm Ryan Fritz</h1>
-          <p className="text-lg mb-5">
+        <div className="flex w-full flex-col sm:max-w-1/2">
+          <h1 className="mb-5 text-3xl font-bold sm:text-5xl">Hey, I&apos;m Ryan Fritz</h1>
+          <p className="mb-5 text-base leading-relaxed sm:text-lg">
             I am a web developer specializing in full-stack development, site
             and SEO optimization, incorporating and utilizing 3rd party
             analytical tools, and fast pace individual teams or agile workflows.
@@ -18,9 +18,9 @@ export const Hero = () => {
             and delivering creative solutions in fast-paced environments. Eager
             to learn and adapt to meet evolving business needs
           </p>
-          <div className="flex flex-row gap-5">
-            <p className="text-md mb-5">📞 919-426-8030</p>
-            <p className="text-md mb-5">
+          <div className="flex flex-col gap-2 sm:flex-row sm:gap-5">
+            <p className="text-sm sm:text-md sm:mb-5">📞 919-426-8030</p>
+            <p className="text-sm sm:text-md sm:mb-5">
               ✉️{" "}
               <a
                 className="text-ring hover:underline"
@@ -28,7 +28,7 @@ export const Hero = () => {
                 ryanfritzc@gmail.com
               </a>
             </p>
-            <p className="text-md mb-5 flex flex-row items-center gap-2">
+            <p className="flex flex-row items-center gap-2 text-sm sm:text-md sm:mb-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 id="linkedin-bug-medium"

@@ -27,14 +27,14 @@ const Header = () => {
         isScrollAtTop()
           ? "bg-secondary border-transparent"
           : "bg-secondary border-foreground "
-      } fixed top-0 w-full p-5 border-b`}>
-      <div className="flex flex-row items-center justify-between max-w-6xl mx-auto">
+      } fixed top-0 z-50 w-full border-b px-4 py-3 sm:p-5`}>
+      <div className="mx-auto flex w-full items-center justify-between gap-3 sm:max-w-6xl sm:flex-row">
         <h1
-          className="hover:underline hover:cursor-pointer"
+          className="text-sm sm:text-base hover:underline hover:cursor-pointer"
           onClick={() => scrollToLocation(0)}>
           Ryan Fritz
         </h1>
-        <div className="flex gap-8 items-center">
+        <div className="flex items-center gap-3 text-sm sm:gap-8 sm:text-base">
           <p
             className="hover:underline hover:cursor-pointer"
             onClick={() => scrollToLocation(getElementPosition("skills", "y"))}>
@@ -42,13 +42,10 @@ const Header = () => {
           </p>
           <p
             className="hover:underline hover:cursor-pointer"
-            onClick={() => scrollToLocation(0)}>
+            onClick={() =>
+              scrollToLocation(getElementPosition("projects", "y"))
+            }>
             Projects
-          </p>
-          <p
-            className="hover:underline hover:cursor-pointer"
-            onClick={() => scrollToLocation(0)}>
-            Contact
           </p>
           <ThemeSwitcher />
         </div>

@@ -21,8 +21,11 @@ export function getElementPosition(id: string, axis: "x" | "y"): number {
   const element = document.getElementById(id);
   if (element) {
     const rect = element.getBoundingClientRect();
-    if (axis === "x") return rect.left;
-    return rect.top - 200;
+    const absoluteX = rect.left + window.scrollX;
+    const absoluteY = rect.top + window.scrollY;
+
+    if (axis === "x") return absoluteX;
+    return Math.max(absoluteY - 200, 0);
   }
   return 0;
 }

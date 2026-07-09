@@ -1,13 +1,16 @@
 import * as svgs from "../lib/svgs";
+import { GithubGraph } from "@/components/GithubGraph";
 
 export const Skills = () => {
   return (
-    <div className="mx-auto justify-center items-center gap-20 w-4/5 p-14">
-      <h1 className="text-3xl font-bold mt-10 mb-5" id="skills">
+    <div className="mx-auto w-full px-4 py-10 sm:w-4/5 sm:justify-center sm:items-center sm:gap-20 sm:p-14">
+      <h1
+        className="mb-5 mt-6 text-2xl font-bold sm:mt-10 sm:text-3xl"
+        id="skills">
         Skills
       </h1>
-      <div className="w-full flex my-5 flex-col sm:flex-row sm:gap-20">
-        <p className="text-lg sm:mb-5 sm:w-1/2">
+      <div className="lg:mt-5 mb-15 flex w-full lg:flex-row flex-col lg:gap-20 sm:flex-row gap-10">
+        <p className="text-base leading-relaxed lg:mb-5 lg:w-1/2 sm:text-lg">
           I bring a lot more than just the technical skills listed to the right!
           I pride myself in being able to assimilate into existing teams and
           quickly get into the flow of things through my outgoing personality. I
@@ -18,8 +21,8 @@ export const Skills = () => {
           criticism.
         </p>
 
-        <div className="sm:w-1/2 flex my-5 flex-col ">
-          <div className="grid-cols-3 md:justify-items-between my-2 grid w-full gap-2 sm:gap-4">
+        <div className="lg:my-5 flex flex-col lg:w-1/2">
+          <div className="my-2 grid w-full grid-cols-1 gap-3 md:grid-cols-3 sm:gap-4 md:justify-items-between">
             <div className="flex flex-row">
               {svgs.reactLogo}
               <p className="ml-5">React</p>
@@ -59,6 +62,7 @@ export const Skills = () => {
           </div>
         </div>
       </div>
+      <GithubGraph />
     </div>
   );
 };
