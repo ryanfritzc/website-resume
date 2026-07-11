@@ -6,10 +6,16 @@ export const Hero = () => {
     <div className="flex w-full bg-secondary px-10 pb-10 pt-24 sm:h-dvh lg:px-0 sm:pb-0 sm:pt-20">
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-8 sm:flex-row sm:items-center sm:justify-between sm:gap-20">
         <div className="w-full max-w-sm sm:w-auto sm:max-w-none">
-          <Image src={Headshot} alt="Ryan Fritz" className="h-auto w-full rounded-2xl sm:w-auto" />
+          <Image
+            src={Headshot}
+            alt="Ryan Fritz"
+            className="h-auto w-full rounded-2xl sm:w-auto"
+          />
         </div>
         <div className="flex w-full flex-col sm:max-w-1/2">
-          <h1 className="mb-5 text-3xl font-bold sm:text-5xl">Hey, I&apos;m Ryan Fritz</h1>
+          <h1 className="mb-5 text-3xl font-bold sm:text-5xl">
+            Hey, I&apos;m Ryan Fritz
+          </h1>
           <p className="mb-5 text-base leading-relaxed sm:text-lg">
             I am a web developer specializing in full-stack development, site
             and SEO optimization, incorporating and utilizing 3rd party
@@ -26,6 +32,15 @@ export const Hero = () => {
                 className="text-ring hover:underline"
                 href="mailto:ryanfritzc@gmail.com">
                 ryanfritzc@gmail.com
+              </a>
+            </p>
+            <p className="flex flex-row items-center gap-2 text-sm sm:text-md sm:mb-5">
+              📃{" "}
+              <a
+                className="text-ring hover:underline"
+                href="RyanFritz_Resume.pdf"
+                download="RyanFritz_Resume.pdf">
+                Resume
               </a>
             </p>
             <p className="flex flex-row items-center gap-2 text-sm sm:text-md sm:mb-5">
